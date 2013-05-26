@@ -18,7 +18,7 @@ module.exports = {
     root: rootPath,
     notifier: notifier,
     app: {
-      name: 'Nodejs Express Mongoose Demo'
+      name: 'Nodejs Passport Boilerplate Demo'
     },
     facebook: {
       clientID: "APP_ID",
