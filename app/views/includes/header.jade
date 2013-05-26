@@ -1,0 +1,27 @@
+
+header#header
+  .navbar.navbar-fixed-top(role='navigation')
+    .navbar-inner
+      .container
+        a.brand(href='/') Node.js Express Mongoose Demo
+        .nav-collapse.collapse
+          ul.nav
+            li
+              a(href='/articles', title="article listing") Articles
+            li
+              a(href="/articles/new", title="new article") New
+            li
+              a(href="https://github.com/madhums/nodejs-express-mongoose-demo", title="fork me on github") FORK ME ON GITHUB
+          ul.nav.pull-right
+            li
+              a(href='https://flattr.com/submit/auto?user_id=madhums&url=https://github.com/madhums/nodejs-express-mongoose-demo&title=NodejsDemo&description=Nodejs express mongoose demo&language=en_GB&tags=madhums,nodejs,programming&category=demo')
+                img(src='https://api.flattr.com/button/flattr-badge-large.png', alt='Nodejs express mongoose demo')
+
+            if (req.isAuthenticated())
+              li
+                a(href="/users/"+req.user.id, title="Profile") Profile
+              li
+                a(href="/logout", title="logout") Logout
+            else
+              li
+                a(href="/login", title="Login") Login
