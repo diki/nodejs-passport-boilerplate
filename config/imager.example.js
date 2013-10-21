@@ -18,7 +18,6 @@ module.exports = {
       }
     }
   },
-
   storage: {
     Rackspace: {
       auth: {
