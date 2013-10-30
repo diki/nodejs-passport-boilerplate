@@ -10,4 +10,6 @@ To run demo
 
     npm install
 
+    create config.js file under config folder (see config example)
+    
     npm start
