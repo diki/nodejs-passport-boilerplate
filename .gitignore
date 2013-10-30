@@ -3,3 +3,5 @@ node_modules/
 config/config.js
 config/imager.js
 Makefile
+sftp-config.json
+syncAll
