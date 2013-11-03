@@ -4,7 +4,7 @@
  */
 
 var mongoose = require('mongoose')
-  , User = mongoose.model('User')
+  , User = mongoose.model('User');
 
 exports.signin = function (req, res) {}
 
@@ -13,7 +13,7 @@ exports.signin = function (req, res) {}
  */
 
 exports.authCallback = function (req, res, next) {
-  res.redirect('/')
+  res.redirect('/');
 }
 
 /**
@@ -24,7 +24,7 @@ exports.login = function (req, res) {
   res.render('users/login', {
     title: 'Login',
     message: req.flash('error')
-  })
+  });
 }
 
 /**
@@ -35,7 +35,7 @@ exports.signup = function (req, res) {
   res.render('users/signup', {
     title: 'Sign up',
     user: new User()
-  })
+  });
 }
 
 /**
@@ -43,8 +43,8 @@ exports.signup = function (req, res) {
  */
 
 exports.logout = function (req, res) {
-  req.logout()
-  res.redirect('/login')
+  req.logout();
+  res.redirect('/login');
 }
 
 /**
@@ -52,7 +52,7 @@ exports.logout = function (req, res) {
  */
 
 exports.session = function (req, res) {
-  res.redirect('/')
+  res.redirect('/');
 }
 
 /**
@@ -80,17 +80,6 @@ exports.create = function (req, res) {
         return res.render('users/signup', { errors: [{"type":"email already registered"}], user:newUser })
       }
     });
-  // var user = new User(req.body);
-  // user.provider = 'local';
-  // user.save(function (err) {
-  //   if (err) {
-  //     return res.render('users/signup', { errors: err.errors, user: user })
-  //   }
-  //   req.logIn(user, function(err) {
-  //     if (err) return next(err)
-  //     return res.redirect('/')
-  //   })
-  // })
 }
 
 /**
@@ -108,7 +97,7 @@ exports.show = function (req, res) {
         title: user.name,
         user: user
       })    
-    })  
+    });  
 }
 
 /**
@@ -123,5 +112,5 @@ exports.user = function (req, res, next, id) {
       if (!user) return next(new Error('Failed to load User ' + id))
       req.profile = user
       next()
-    })
+    });
 }
