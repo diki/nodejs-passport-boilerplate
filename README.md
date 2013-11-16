@@ -1,20 +1,33 @@
+NodeJS Passport Boilerplate
+============
+
 ##[Demo](http://passport.diki.io)
 
-A demo app in nodejs illustrating the use of **passport** in **express**, **jade** and **mongoose** environment
-together with front pages built with Bootstrap
+User system in nodejs illustrating the use of **passport** in **express**, **jade** and **mongoose** environment
+together with front pages for login, signup and profile mock built with Twitter Bootstrap
 
-It illustrates login with Facebook, Twitter, Github and Google together with Passport LocalStrategy
+Includes login with Facebook, Twitter, Github and Google together with Passport LocalStrategy
 
-Includes login, signup and profile page built by bootstrap
+Technology
+------------
 
-To run demo
+| On The Server | On The Client  |
+| ------------- | -------------- |
+| Express       | Bootstrap 2    |
+| Jade          | Backbone.js    |
+| Passport      | jQuery         |
+| Mongoose      | Underscore.js  |
 
-    git clone https://github.com/diki/nodejs-passport-boilerplate.git
+Installation
+-------------
 
-    cd nodejs-passport-boilerplate
+1. git clone https://github.com/diki/nodejs-passport-boilerplate.git
+2. cd nodejs-passport-boilerplate
+3. npm install
+4. create config.js file under config folder (see config example)
+5. npm start
 
-    npm install
+License
+------------
 
-    create config.js file under config folder (see config example)
-    
-    npm start
+MIT
