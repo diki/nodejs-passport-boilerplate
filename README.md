@@ -1,4 +1,7 @@
+##[Demo](passport.diki.io)
+
 A demo app in nodejs illustrating the use of **passport** in **express**, **jade** and **mongoose** environment
+together with front pages built with Bootstrap
 
 It illustrates login with Facebook, Twitter, Github and Google together with Passport LocalStrategy
 
