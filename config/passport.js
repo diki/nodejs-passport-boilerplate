@@ -4,7 +4,7 @@ var mongoose = require('mongoose')
   , TwitterStrategy = require('passport-twitter').Strategy
   , FacebookStrategy = require('passport-facebook').Strategy
   , GitHubStrategy = require('passport-github').Strategy
-  , GoogleStrategy = require('passport-google-oauth').Strategy
+  , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy
   , User = mongoose.model('User')
 
 
@@ -126,20 +126,25 @@ module.exports = function (passport, config) {
   ))
 
   // use google strategy
-  passport.use(new GoogleStrategy({
-      consumerKey: config.google.clientID,
-      consumerSecret: config.google.clientSecret,
+passport.use(new GoogleStrategy({
+      clientID: config.google.clientID,
+      clientSecret: config.google.clientSecret,
       callbackURL: config.google.callbackURL
     },
     function(accessToken, refreshToken, profile, done) {
       User.findOne({ 'google.id': profile.id }, function (err, user) {
         if (!user) {
+          // make a new google profile without key start with $
+          var new_profile = {}
+          new_profile.id = profile.id
+          new_profile.displayName = profile.displayName
+          new_profile.emails = profile.emails
           user = new User({
               name: profile.displayName
             , email: profile.emails[0].value
             , username: profile.username
             , provider: 'google'
-            , google: profile._json
+            , google: new_profile._json
           })
           user.save(function (err) {
             if (err) console.log(err)
