@@ -1,4 +1,4 @@
-##[Demo](passport.diki.io)
+##[Demo](http://passport.diki.io)
 
 A demo app in nodejs illustrating the use of **passport** in **express**, **jade** and **mongoose** environment
 together with front pages built with Bootstrap
