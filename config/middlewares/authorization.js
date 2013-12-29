@@ -24,16 +24,3 @@ exports.user = {
     }
 }
 
-
-/*
- *  Article authorizations routing middleware
- */
-
-exports.article = {
-    hasAuthorization : function (req, res, next) {
-      if (req.article.user.id != req.user.id) {
-        return res.redirect('/articles/'+req.article.id)
-      }
-      next()
-    }
-}
