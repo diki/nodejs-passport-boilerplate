@@ -22,7 +22,7 @@ module.exports = function (app, config, passport) {
 
   // don't use logger for test env
   if (process.env.NODE_ENV !== 'test') {
-    app.use(express.logger('dev'))''
+    app.use(express.logger('dev'));
   }
 
   // set views path, template engine and default layout
@@ -46,7 +46,7 @@ module.exports = function (app, config, passport) {
       store: new mongoStore({
         url: config.db,
         collection : 'sessions'
-      });
+      })
     }));
 
     // connect flash for flash messages
