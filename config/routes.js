@@ -1,8 +1,4 @@
-
-var async = require('async')
-
 module.exports = function (app, passport, auth) {
-
   // user routes
   var users = require('../app/controllers/users');
   app.get('/login', users.login);
