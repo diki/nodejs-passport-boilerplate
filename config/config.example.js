@@ -7,7 +7,6 @@ module.exports = {
   development: {
     db: 'mongodb://localhost/noobjs_dev',
     root: rootPath,
-    notifier: notifier,
     app: {
       name: 'Nodejs Passport Boilerplate Demo'
     },
@@ -35,7 +34,6 @@ module.exports = {
   test: {
     db: 'mongodb://localhost/noobjs_test',
     root: rootPath,
-    notifier: notifier,
     app: {
       name: 'Nodejs Express Mongoose Demo'
     },
