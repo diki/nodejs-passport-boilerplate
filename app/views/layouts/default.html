@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product">
+  {% include '../includes/head.html' %}
+  <body>
+    <div class="wrapper">
+      {% include '../includes/header.html' %}
+      <div class="container">
+        <div class="main-content">
+          <div class="main-head">
+            {% block main %}
+            {% endblock %}
+          </div>
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+      <div class="push"></div>
+      {% include '../includes/foot.html' %}
+      {% include '../includes/footer.html' %}
+    </div>
+  </body>
+</html>

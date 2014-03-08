@@ -1,0 +1,21 @@
+
+<header id="header">
+  <div role="navigation" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container"><a href="/" class="brand">Node.js Passport Boilerplate</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
+            <li>
+              {% if req.isAuthenticated() %}
+                <li><a href="/users/{{req.user.id}}" title="Profile">Profile</a></li>
+                <li><a href="/logout" title="logout">Logout</a></li>
+              {% else %}
+                <li><a href="/login" title="Login">Login</a></li>
+              {% endif %}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
