@@ -3,7 +3,7 @@
   "description": "A demo app in nodejs illustrating the use of passport in express, jade and mongoose environment",
   "version": "1.0.0",
   "private": false,
-  "author": "Mustafa Dikici <musdikici@gmail.com>",
+  "author": "Mustafa Dikici <musdikici@gmail.com>, Madhusudhan Srinivasa <madhums8@gmail.com>",
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
