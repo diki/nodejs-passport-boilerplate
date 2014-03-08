@@ -27,13 +27,11 @@
     "underscore": "latest",
     "gzippo": "latest",
     "async": "latest",
-    "view-helpers": "latest",
-    "forever": "latest"
+    "view-helpers": "latest"
   },
   "devDependencies": {
     "supertest": "latest",
     "should": "latest",
-    "mocha": "latest",
-    "nodemon": "latest"
+    "mocha": "latest"
   }
 }
