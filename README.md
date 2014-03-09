@@ -8,7 +8,7 @@ together with front pages for login, signup and profile mock built with Twitter 
 
 Includes login with Facebook, Twitter, Github and Google together with Passport LocalStrategy
 
-many thanks to https://github.com/madhums/node-express-mongoose-demo since this project is stripped version
+Many thanks to https://github.com/madhums/node-express-mongoose-demo since this project is stripped and modified version
 
 Technology
 ------------
