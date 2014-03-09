@@ -62,10 +62,8 @@ describe('Users', function () {
         .field('username', 'foobar')
         .field('email', 'foobar@example.com')
         .field('password', 'foobar')
-        .expect('Content-Type', /plain/)
-        .expect('Location', /\//)
-        .expect(302)
-        .expect(/Moved Temporarily/)
+        .expect('Content-Type', /text/)
+        .expect(200)
         .end(done)
       })
 
