@@ -1,6 +1,5 @@
 before_script:
   - cp config/config.example.js config/config.js
-  - cp config/imager.example.js config/imager.js
 services:
   - mongodb
 language: node_js
