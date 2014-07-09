@@ -1,34 +1,40 @@
-{% extends 'auth.html' %}
+{% extends '../layouts/default.html' %}
 
-{% block auth %}
-  <form action="/users" method="post" class="signup form-horizontal">
-    <div class="control-group">
-      <label for="name" class="control-label">Full name</label>
-      <div class="controls">
-        <input id="name" type="text" name="name" placeholder="Full name" value="{{user.name}}">
+{% block content %}
+<div class="col-md-4 col-md-offset-4" style="background: #fff; border-radius: 5px; padding: 36px 20px;">
+  <form action="/users" method="post" role="form">
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-envelope"></i>
+        </span>
+        <input type="text" class="form-control input-lg" id="username" name="email" placeholder="email" value="{{user.email}}" autocomplete="off"/>
+        {% if error.type == 'email' %} 
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        {% endif %}                     
       </div>
     </div>
-    <div class="control-group">
-      <label for="email" class="control-label">Email</label>
-      <div class="controls">
-        <input id="email" type="text" name="email" placeholder="Email" value="{{user.email}}">
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon" style="padding: 0 14.5px;">
+          <i class="fa fa-lock"></i>
+        </span>                
+        <input name="password" type="password" class="form-control input-lg" value="{{user.password}}" id="password" placeholder="password"/>
+        {% if error.type == 'password' %} 
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        {% endif %}                    
       </div>
+    </div>            
+    <div class="form-group">
+      <button class="btn btn-warning btn-lg btn-block">Signup</button>
     </div>
-    <div class="control-group">
-      <label for="username" class="control-label">Username</label>
-      <div class="controls">
-        <input id="username" type="text" name="username" placeholder="Username" value="{{user.username}}">
-      </div>
+    <div class="socials">
+      <a href="/auth/facebook"><img src="/img/facebook.png"></a>
+      <a href="/auth/github"><img src="/img/github.png"></a>
+      <a href="/auth/twitter"><img src="/img/twitter.png"></a>
+      <a href="/auth/google"><img src="/img/google.png"></a>
     </div>
-    <div class="control-group">
-      <label for="password" class="control-label">Password</label>
-      <div class="controls">
-        <input id="password" type="password" name="password" placeholder="Password">
-      </div>
-    </div>
-    <div class="form-actions">
-      <button type="submit" class="btn btn-primary">Sign up</button>&nbsp;
-      or&nbsp;<a href="/login" class="show-login">login</a>
-    </div>
+
   </form>
+</div>
 {% endblock %}

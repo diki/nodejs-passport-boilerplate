@@ -60,6 +60,7 @@ module.exports = function (app, config, passport) {
 
     app.use(function (req, res, next) {
         res.locals.session = req.session;
+        res.locals.req = req;
         next();
     });
 

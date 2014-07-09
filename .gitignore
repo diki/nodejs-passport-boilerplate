@@ -4,3 +4,4 @@ config/config.js
 Makefile
 sftp-config.json
 syncAll
+public/bower_components

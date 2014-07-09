@@ -1,20 +1,23 @@
 {% extends '../layouts/default.html' %}
 
-{% block main %}
-  <h1>NodeJS Passport Boilerplate</h1>
-  <iframe src="http://ghbtns.com/github-btn.html?user=diki&amp;repo=nodejs-passport-boilerplate&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="122" height="20"> </iframe>
-  <iframe src="http://ghbtns.com/github-btn.html?user=diki&amp;repo=nodejs-passport-boilerplate&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="122" height="20"> </iframe>
-  <div style="text-align:left" class="well">
-    <h3>This page is demonstration of <a href="https://github.com/diki/nodejs-passport-boilerplate">this project.</a></h3>
-    <h3>What is this project?</h3>
-    <div>It is a nodejs application including:  </div>
-    <ul> 
-      <li>login, signup with Passport (local, google, facebook, twitter and github)</li>
-      <li>front end pages for login, signup and profile with bootstrap</li>
-      <li>a well designed project structure to start your nodejs application</li>
-      <!--a(href='https://github.com/diki/nodejs-passport-boilerplate') github page-->
-    </ul>
-    <h3>Technology</h3>
+{% block content %}
+  
+  <div class="col-md-4 col-md-offset-4">
+    <iframe src="http://ghbtns.com/github-btn.html?user=diki&amp;repo=nodejs-passport-boilerplate&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="122" height="20"> </iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user=diki&amp;repo=nodejs-passport-boilerplate&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="122" height="20"> </iframe>
+  </div>
+  <div class="col-md-12">
+    <p class="lead">Use this project to quickly start your next node.js project</p>
+    
+    <div class="mast">
+      <div>What you get:</div>
+      <ul style="list-style:none;" class="leadlist"> 
+        <li class="text-muted">login, signup with Passport (local, google, facebook, twitter and github)</li>
+        <li class="text-muted">front end pages for login, signup and profile with bootstrap</li>
+        <li class="text-muted">a well designed project structure to start your nodejs application</li>
+      </ul>
+    </div>
+<!--     <h3>Technology</h3>
     <table>
       <tr>
         <th style="width:120px; border-bottom:1px solid black">Server</th>
@@ -25,7 +28,7 @@
         <td>Bootstrap</td>
       </tr>
       <tr>
-        <td>Jade</td>
+        <td>Swig</td>
         <td>jQuery</td>
       </tr>
       <tr>
@@ -44,6 +47,6 @@
       <p>create "config.js" file under config folder (see config example)</p>
       <p>$ npm start</p>
       <p>open localhost:3000 in your browser</p>
-    </div>
+    </div> -->
   </div>
 {% endblock %}

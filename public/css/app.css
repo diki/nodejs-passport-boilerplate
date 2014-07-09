@@ -1,49 +1,22 @@
 body {
-  padding-top: 60px;
-  background-image: url('/img/linedpaper.png'); 
+  font-family: 'Open Sans', sans-serif;
 }
-
-.date {
-  font-size: 11px;
-  color: #aaa;
+.navbar-brand {
+  font-family: 'Josefin Sans', sans-serif;
 }
-
-.author {
-  color: #aaa;
+.socials img {
+  width: 82px;
 }
-
-.title {
-  padding: 5px 0 15px 0;
-  display: block;
-  font-size: 24px;
+.navbar-nav.pull-right {
+  margin-top: 16px;
 }
-
-.article, .comment {
-  padding: 15px 0;
-  border-top: 1px solid #e8e8e8;
+.lead {
+  font-size: 30px;
+  margin-top: 32px;
 }
-
-.main-head {
-  text-align: center;
-  padding: 20px;
+.mast {
+  font-size: 20px;
 }
-
-.btn {
-  outline: none !important;
-}
-
-.center {
-  text-align: center;
-}
-
-.tags {
-  margin-top: 10px;
-}
-
-a.tag {
-  margin: 0 10px 0 0;
-}
-
-.error {
-  color: #FF2602;
+.mast li{
+  line-height: 36px;
 }

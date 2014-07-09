@@ -1,21 +1,39 @@
+<style type="text/css">
+    .navbar-inverse .navbar-brand {
+        color: #fff;
+    }
+    .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+    .navbar {min-height:36px !important;} 
+    #brand .na {color: white;font-weight: bold;font-size: 32px;}
+    #brand .be {font-size: 10px; background: black; color: white; padding: 1px 6px;}
+</style>
 
-<header id="header">
-  <div role="navigation" class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container"><a href="/" class="brand">Node.js Passport Boilerplate</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav pull-right">
-            <li>
-              {% if req.isAuthenticated() %}
-                <li><a href="/users/{{req.user.id}}" title="Profile">Profile</a></li>
-                <li><a href="/logout" title="logout">Logout</a></li>
-              {% else %}
-                <li><a href="/login" title="Login">Login</a></li>
-              {% endif %}
-            </li>
-          </ul>
+<nav class="navbar navbar-fixed-top navbar-inverse" id="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header" id="brand">
+            <a class="navbar-brand" href="/" style="margin-top:12px;">
+                <span class="na">Nodejs Passport Boilerplate</span>
+            </a>
         </div>
-      </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                {% if req.isAuthenticated() %}
+                <li class="ns-dropdown">
+                    <a href="#" class="ns-dropdown-toggle" data-toggle="dropdown">{{req.user.email}} <b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="right:0;">
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </li> 
+                {% else %}
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/signup">Create Account</a>
+                </li>                
+                {% endif %}          
+            </ul>                        
+        </div>
     </div>
-  </div>
-</header>
+</nav>
