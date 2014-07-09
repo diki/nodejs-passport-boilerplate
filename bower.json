@@ -1,0 +1,23 @@
+{
+  "name": "worth2send",
+  "version": "0.0.0",
+  "homepage": "http://localhost",
+  "authors": [
+    "diki <musdikici@gmail.com>"
+  ],
+  "description": "worth2send source",
+  "license": "private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "fontawesome": "latest"
+  }
+}
