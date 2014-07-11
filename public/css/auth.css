@@ -1,0 +1,7 @@
+.form-group * {
+  border-radius: 0;
+}
+.input-group-addon {
+  background: #fafafa;
+  color: #777;
+}

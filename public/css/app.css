@@ -9,7 +9,7 @@ body {
 }
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
 .navbar {min-height:36px !important;} 
-#brand .na {color: white;font-weight: bold;font-size: 32px;}
+#brand .na {color: white;font-weight: bold;font-size: 24px;}
 #brand .be {font-size: 10px; background: black; color: white; padding: 1px 6px;}
 .socials img {
   max-width: 82px;
