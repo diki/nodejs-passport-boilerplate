@@ -1,5 +1,5 @@
 {
-  "name": "NodeJS-Passort-BoilerPlate",
+  "name": "NodeJS-Passport-BoilerPlate",
   "description": "A demo app in nodejs illustrating the use of passport in express, swig and mongoose environment",
   "version": "1.0.0",
   "private": false,
