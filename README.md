@@ -8,17 +8,15 @@ together with front pages for login, signup and profile mock built with Twitter 
 
 Includes login with Facebook, Twitter, Github and Google together with Passport LocalStrategy
 
-Many thanks to https://github.com/madhums/node-express-mongoose-demo since this project is stripped and modified version
-
 Technology
 ------------
 
 | On The Server | On The Client  |
 | ------------- | -------------- |
-| Express       | Bootstrap 2    |
+| Express       | Bootstrap 3    |
 | Jade          | Backbone.js    |
 | Passport      | jQuery         |
-| Mongoose      | Underscore.js  |
+| Mongoose      | Underscore.js  | 
 
 Installation
 -------------

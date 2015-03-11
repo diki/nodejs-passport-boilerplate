@@ -1,6 +1,6 @@
 {
-  "name": "NodeJS-Passport-BoilerPlate",
-  "description": "A demo app in nodejs illustrating the use of passport in express, swig and mongoose environment",
+  "name": "NodeJS-Passort-BoilerPlate",
+  "description": "A demo app in nodejs illustrating the use of passport in express, swig and mongoose environment.Many thanks to https://github.com/madhums/node-express-mongoose-demo since this project is stripped and modified version",
   "version": "1.0.0",
   "private": false,
   "author": "Mustafa Dikici <musdikici@gmail.com>, Madhusudhan Srinivasa <madhums8@gmail.com>",
